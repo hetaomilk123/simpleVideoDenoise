@@ -1,0 +1,5 @@
+#include "simpFilters.h"
+
+/************************ 全局函数 *************************/
+double computePSNR(const Mat &img1, const Mat &img2);
+Mat addGaussNoise(const Mat &img, int stddev);

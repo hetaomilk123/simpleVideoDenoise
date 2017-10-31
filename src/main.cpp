@@ -1,7 +1,14 @@
 #include "simpFilters.h" 
 
 int main(int argc, char **argv){
-	Mat a = Mat::zeros(3, 3, CV_8UC1);
-	cout << a << endl;
+#ifdef IS_IMAGE		
+	Mat img;
+	if(argc!=2 || !(img=imread(argv[1], 0)).data){
+		throw runtime_error("输入参数不正确!");	
+	}
+	runFilters(img);
+#else
+
+#endif
 	return 0;
 }
