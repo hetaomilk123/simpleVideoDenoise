@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/simpFilters.h
+opencv2/opencv.hpp
+-
+iostream
+-
+
+/home/lyl/c++/STUDY/simpleVideoDenoise/src/main.cpp
+simpFilters.h
+/home/lyl/c++/STUDY/simpleVideoDenoise/src/simpFilters.h
+
